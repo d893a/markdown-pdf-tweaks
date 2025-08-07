@@ -1,0 +1,69 @@
+/*  Tweaks to the yzane.markdown-pdf-1.5.0 VS Code extension
+
+    Open %APPDATA%\Code\User\settings.json, and add:
+
+        "markdown-pdf.styles": [
+            "C:/path/to/this/markdown-pdf.user.css"
+        ]
+
+*/
+
+body, p {
+    font-size: 11px;
+    text-align: justify;
+}
+
+table, th, td {
+    font-size: 11px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    overflow: auto;
+    font-variant: tabular-nums;
+    line-height: 1;
+}
+
+th, td {
+    padding: 0px 0px; /* vertical and horizontal padding */
+    /* border: 1px solid #d1d9e0; */ /* Use a suitable border color */
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+th {
+    font-weight: 600;
+    background-color: #e0e0e0;
+}
+
+tr {
+    background-color: #fff;
+    border-top: 1px solid #d1d9e0;
+    border-bottom: 1px solid #d1d9e0;
+}
+
+/*
+tr:nth-child(2n) {
+    background-color: #f6f8fa;
+}
+*/
+
+/*
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > tbody > tr > td {
+	border-top: 1px solid;
+}
+*/
+
+code {
+	font-size: 10px;
+	line-height: 1.2;
+}
